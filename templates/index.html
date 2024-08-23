@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Inline CSS for simplicity; move to styles.css in production */
+        .image-container {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .image-wrapper img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Image Generator</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="prompt">Enter a prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Generate Image</button>
+    </form>
+
+    {% if request.method == 'POST' %}
+    <div class="image-container" id="imageContainer">
+        <div class="image-wrapper">
+            <h2>Generated Image:</h2>
+            <img src="{{ url_for('index') }}" alt="Generated Image">
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle the showing of the image container
+        document.addEventListener('DOMContentLoaded', function() {
+            var imageContainer = document.getElementById('imageContainer');
+            if (imageContainer) {
+                imageContainer.style.display = 'block';
+            }
+        });
+    </script>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Neutral, easy-on-the-eyes font */
+    background-color: #121212; /* Soft black background */
+    color: #e0e0e0; /* Light grey text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b0bec5; /* Soft grey color */
+}
+
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.1); /* Lightly shaded background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #e0e0e0; /* Light grey text color */
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0; /* Light grey border */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker input background */
+    color: #000000; /* Black text color */
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 8px 15px;
+    background-color: #455a64; /* Soft blue-grey */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #37474f; /* Darker blue-grey on hover */
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: #e0e0e0; /* Light grey text color */
+}
+
+/* Image styling */
+img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+}

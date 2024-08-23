@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Black and bluish background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ffff; /* Cyan color for the heading */
+}
+
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5); /* Subtle glow effect */
+}
+
+label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #ffffff; /* White text color */
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ffffff; /* White border */
+    background-color: rgba(255, 255, 255, 0.1); /* Lightly shaded input */
+    color: #ffffff; /* White text color */
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 8px 15px;
+    background-color: #00ffff; /* Cyan color */
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #009999; /* Darker cyan on hover */
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffffff; /* White text color */
+}
+
+/* Image styling */
+img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+}

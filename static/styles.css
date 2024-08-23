@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Black and bluish background */
+    background-image: url("background.jpg");
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 8px #00ffff; /* Neon glow effect */
+}
+
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5); /* Glow effect */
+    text-align: center;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #00ffff; /* Cyan color */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #009999; /* Darker cyan on hover */
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    text-shadow: 0px 0px 8px #00ffff; /* Neon glow effect */
+}
+
+/* Image styling */
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); /* Glow effect */
+}
