@@ -17,3 +17,6 @@
 ```bash
 git clone https://github.com/matteo-riga/ImgGenWebsite.git
 cd ImgGenWebsite
+python app.py
+```
+And go to http://127.0.0.1:2345/
