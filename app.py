@@ -6,14 +6,14 @@ from diffusers import StableDiffusionPipeline
 
 app = Flask(__name__)
 
-#pipeline = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", use_auth_token=True)
+pipeline = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", use_auth_token=True)
 
 def generate_image(prompt):
     # image generation code
-    #generator = torch.Generator().manual_seed(1024)
-    #global pipeline
-    #image = pipeline(prompt, num_inference_steps=2, generator=generator).images[0]
-    image = Image.new('RGB', (512, 512), color='white')
+    generator = torch.Generator().manual_seed(1024)
+    global pipeline
+    image = pipeline(prompt, num_inference_steps=2, generator=generator).images[0]
+    #image = Image.new('RGB', (512, 512), color='white')
     return image
 
 @app.route('/', methods=['GET', 'POST'])
