@@ -16,7 +16,7 @@
 
 Please note that the image generation process can be slow due to limited computational resources. The model requires significant processing power, and without access to high-performance hardware (such as GPUs), it may take a while (up to hours) to generate images.
 
-## Example image
+## Example images
 
 Here is an example of a generated image using the literature famous prompt "a photo of an astronaut riding a horse on mars".
 ![astronaut](astronaut.png)
